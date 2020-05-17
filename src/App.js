@@ -92,7 +92,7 @@ class App extends React.Component {
     .then(response => response.json())
       .then( (response) => {
         if(response) {
-          fetch('https://obscure-ocean-76498.herokuapp.com:3000/image',{
+          fetch('https://obscure-ocean-76498.herokuapp.com/image',{
             method:'put',
             headers:{'Content-Type':'application/JSON'},
             body: JSON.stringify({
@@ -120,7 +120,7 @@ class App extends React.Component {
       this.setState({isSigniedIn:true})  
     }
     this.setState({route:route})
-    // this.setState({imageUrl: '' })
+    this.setState({imageUrl: '' })
   }
 
 
